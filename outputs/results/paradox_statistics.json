@@ -1,0 +1,10 @@
+{
+  "aosp_distress_correlation": -0.04512440160334244,
+  "paradox_index_correlation": 0.19729403883559052,
+  "high_aosp_high_distress_rate": 0.6876,
+  "mean_aosp": 0.0008677640289219679,
+  "mean_distress": 0.6876,
+  "mean_paradox_index": 4.402733382844032e-06,
+  "structured_aosp_distress_correlation": 0.7517277266812706,
+  "structured_paradox_rate": 0.358625
+}

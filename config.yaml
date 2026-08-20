@@ -1,0 +1,82 @@
+project:
+  name: "Achievement Self-Presentation & Well-Being"
+  seed: 42
+  output_dir: "outputs"
+  results_dir: "outputs/results"
+
+paths:
+  structured_csv: "datasets/structured_data.csv"
+  unstructured_csv: "datasets/unstructured_data.csv"
+  image_dir: "datasets/images"
+  lmvd_data_dir: "lmvd-analysis/data"
+  lmvd_labels: "lmvd-analysis/data/lmvd_labels_summary.csv"
+  lmvd_image_dir: "datasets/lmvd_extracted/images"
+
+targets:
+  # Primary well-being outcomes
+  structured_regression: ["GAD_7_Score", "PHQ_9_Score"]
+  structured_binary: "high_distress"  # GAD-7 >= 10 or PHQ-9 >= 10
+  text_multiclass: "status"
+  text_binary: "wellbeing_decline"  # Depression, Anxiety, Stress, Suicidal vs Normal
+  lmvd_binary: "label"  # 0=Normal, 1=Depression
+
+achievement_features:
+  competence_weight: 0.34
+  success_weight: 0.33
+  status_weight: 0.33
+
+text_models:
+  classical: ["random_forest", "svm", "xgboost"]
+  transformers: ["bert-base-uncased", "roberta-base", "distilbert-base-uncased"]
+  max_length: 128
+  batch_size: 16
+  epochs: 3
+  learning_rate: 2.0e-5
+
+text_dl_models:
+  - text_mlp
+  - text_cnn
+  - text_bilstm
+  - text_gru
+
+image_models:
+  architectures: ["cnn", "resnet18", "resnet50", "efficientnet_b0", "vgg16", "mobilenet_v2"]
+  image_size: 224
+  batch_size: 16  
+  epochs: 10
+  learning_rate: 1.0e-4
+
+video_models:
+  architectures: ["video_audio_lstm", "visual_lstm", "audio_lstm", "video_audio_gru", "audio_cnn1d"]
+  lstm_hidden: 128
+  lstm_layers: 2
+  dropout: 0.3
+  max_video_frames: 400
+  max_audio_frames: 186
+  video_feature_dim: 171
+  audio_feature_dim: 128
+  batch_size: 8
+  epochs: 8
+  learning_rate: 1.0e-3
+  max_train_samples: 400
+  max_val_samples: 100
+  min_cached_npy: 100
+
+trimodal:
+  fusion_methods: ["early", "late", "attention"]
+  image_architecture: "resnet18"
+  embed_dim: 128
+  batch_size: 8
+  epochs: 10
+  learning_rate: 1.0e-3
+  max_train_samples: 400
+  max_val_samples: 100
+
+fusion:
+  methods: ["early", "late", "attention"]
+  hidden_dim: 256
+
+evaluation:
+  cv_folds: 5
+  test_size: 0.2
+  metrics: ["accuracy", "f1_macro", "f1_weighted", "roc_auc", "mse", "r2"]

@@ -1,0 +1,304 @@
+{
+  "text_D2": {
+    "dataset": "D2 (unstructured text, sample=8000)",
+    "model": "random_forest",
+    "target": "wellbeing_decline",
+    "n_features_total": 2012,
+    "n_shap_background_samples": 600,
+    "top_20_features": [
+      {
+        "feature": "plus",
+        "mean_abs_shap": 2.097513018943165e+83
+      },
+      {
+        "feature": "ahead",
+        "mean_abs_shap": 2.0647697959927393e+83
+      },
+      {
+        "feature": "true",
+        "mean_abs_shap": 2.0617150573949968e+83
+      },
+      {
+        "feature": "hello",
+        "mean_abs_shap": 2.0578171410962444e+83
+      },
+      {
+        "feature": "stay",
+        "mean_abs_shap": 2.0369874521298198e+83
+      },
+      {
+        "feature": "women",
+        "mean_abs_shap": 2.0343369811391797e+83
+      },
+      {
+        "feature": "stuck",
+        "mean_abs_shap": 2.0240559831285246e+83
+      },
+      {
+        "feature": "food",
+        "mean_abs_shap": 2.0054724212357473e+83
+      },
+      {
+        "feature": "looking",
+        "mean_abs_shap": 1.9850914980893137e+83
+      },
+      {
+        "feature": "matter",
+        "mean_abs_shap": 1.9781819443546513e+83
+      },
+      {
+        "feature": "heart",
+        "mean_abs_shap": 1.975136217349305e+83
+      },
+      {
+        "feature": "text",
+        "mean_abs_shap": 1.973892151956692e+83
+      },
+      {
+        "feature": "depression",
+        "mean_abs_shap": 1.9642577497582962e+83
+      },
+      {
+        "feature": "month",
+        "mean_abs_shap": 1.9636738982993694e+83
+      },
+      {
+        "feature": "clean",
+        "mean_abs_shap": 1.9492305661163625e+83
+      },
+      {
+        "feature": "random",
+        "mean_abs_shap": 1.9449793198631536e+83
+      },
+      {
+        "feature": "lost",
+        "mean_abs_shap": 1.928133561912156e+83
+      },
+      {
+        "feature": "years",
+        "mean_abs_shap": 1.9277167764784735e+83
+      },
+      {
+        "feature": "asked",
+        "mean_abs_shap": 1.9148574125878833e+83
+      },
+      {
+        "feature": "asleep",
+        "mean_abs_shap": 1.9092173314087175e+83
+      }
+    ],
+    "aosp_feature_ranks": {
+      "competence_score": 496,
+      "success_score": 498,
+      "status_score": 879,
+      "idealisation_score": 528,
+      "distress_score": 360,
+      "social_comparison_score": 978,
+      "aosp_composite": 346,
+      "paradox_index": 491,
+      "word_count": 364,
+      "exclamation_density": 358,
+      "hashtag_count": 350,
+      "emoji_density": 1411
+    }
+  },
+  "structured_D1": {
+    "dataset": "D1 (structured survey, n=8000)",
+    "model": "random_forest",
+    "target": "high_distress (GAD-7>=10 or PHQ-9>=10)",
+    "n_features_total": 21,
+    "feature_ranking": [
+      {
+        "feature": "Late_Night_Usage",
+        "mean_abs_shap": 0.20769095251482037
+      },
+      {
+        "feature": "Daily_Screen_Time_Hours",
+        "mean_abs_shap": 0.12294665445100562
+      },
+      {
+        "feature": "User_Archetype_Digital Minimalist",
+        "mean_abs_shap": 0.034694706040249684
+      },
+      {
+        "feature": "User_Archetype_Hyper-Connected",
+        "mean_abs_shap": 0.026239400338804876
+      },
+      {
+        "feature": "Activity_Type_Passive",
+        "mean_abs_shap": 0.024833539153948942
+      },
+      {
+        "feature": "Sleep_Duration_Hours",
+        "mean_abs_shap": 0.023872445451650084
+      },
+      {
+        "feature": "Social_Comparison_Trigger",
+        "mean_abs_shap": 0.021203986902922946
+      },
+      {
+        "feature": "User_Archetype_Passive Scroller",
+        "mean_abs_shap": 0.0203514877135271
+      },
+      {
+        "feature": "Age",
+        "mean_abs_shap": 0.009070773546130083
+      },
+      {
+        "feature": "Gender_Male",
+        "mean_abs_shap": 0.008937837092317628
+      },
+      {
+        "feature": "Primary_Platform_Instagram",
+        "mean_abs_shap": 0.005874050015871408
+      },
+      {
+        "feature": "Primary_Platform_TikTok",
+        "mean_abs_shap": 0.005284995208979904
+      },
+      {
+        "feature": "Dominant_Content_Type_Lifestyle/Fashion",
+        "mean_abs_shap": 0.005089729821155832
+      },
+      {
+        "feature": "Primary_Platform_YouTube",
+        "mean_abs_shap": 0.004893175634537463
+      },
+      {
+        "feature": "Dominant_Content_Type_News/Politics",
+        "mean_abs_shap": 0.004863615329321545
+      },
+      {
+        "feature": "Dominant_Content_Type_Entertainment/Comedy",
+        "mean_abs_shap": 0.004713699771315399
+      },
+      {
+        "feature": "Dominant_Content_Type_Self-Help/Motivation",
+        "mean_abs_shap": 0.00445814847555447
+      },
+      {
+        "feature": "Primary_Platform_Twitter/X",
+        "mean_abs_shap": 0.0043554724044195334
+      },
+      {
+        "feature": "Primary_Platform_Snapchat",
+        "mean_abs_shap": 0.004250054820064483
+      },
+      {
+        "feature": "Dominant_Content_Type_Gaming",
+        "mean_abs_shap": 0.003989754296570789
+      },
+      {
+        "feature": "Primary_Platform_LinkedIn",
+        "mean_abs_shap": 0.0037690394277697633
+      }
+    ]
+  },
+  "text_D2_gini_fallback": {
+    "method": "RandomForest Gini feature_importances_ (shap.TreeExplainer produced invalid/non-additive values in this environment: sklearn 1.9 + shap 0.52; garbage magnitudes ~1e86 even with check_additivity=False)",
+    "dataset": "D2 (unstructured text, sample=8000, TF-IDF(2000)+AOSP(12), same pipeline as run_experiments.py)",
+    "target": "wellbeing_decline",
+    "n_features_total": 2012,
+    "top_20_features_gini": [
+      {
+        "feature": "word_count",
+        "gini_importance": 0.13397579423334074
+      },
+      {
+        "feature": "distress_score",
+        "gini_importance": 0.04018453603933603
+      },
+      {
+        "feature": "just",
+        "gini_importance": 0.03816163745407233
+      },
+      {
+        "feature": "depression",
+        "gini_importance": 0.03131275703810228
+      },
+      {
+        "feature": "feel",
+        "gini_importance": 0.028515843032476215
+      },
+      {
+        "feature": "life",
+        "gini_importance": 0.028166842395986973
+      },
+      {
+        "feature": "like",
+        "gini_importance": 0.021393129665160986
+      },
+      {
+        "feature": "know",
+        "gini_importance": 0.019800934992464558
+      },
+      {
+        "feature": "time",
+        "gini_importance": 0.015670217472270605
+      },
+      {
+        "feature": "want",
+        "gini_importance": 0.01316538138409333
+      },
+      {
+        "feature": "die",
+        "gini_importance": 0.011731221386558683
+      },
+      {
+        "feature": "feel like",
+        "gini_importance": 0.010914866647815435
+      },
+      {
+        "feature": "help",
+        "gini_importance": 0.010269788224976402
+      },
+      {
+        "feature": "really",
+        "gini_importance": 0.010120931041933118
+      },
+      {
+        "feature": "anxiety",
+        "gini_importance": 0.009854106607061527
+      },
+      {
+        "feature": "anymore",
+        "gini_importance": 0.008895249772842524
+      },
+      {
+        "feature": "people",
+        "gini_importance": 0.008512260684725078
+      },
+      {
+        "feature": "things",
+        "gini_importance": 0.008413580211213209
+      },
+      {
+        "feature": "think",
+        "gini_importance": 0.008261376015710717
+      },
+      {
+        "feature": "suicide",
+        "gini_importance": 0.008045782608565356
+      }
+    ],
+    "aosp_feature_ranks_gini": {
+      "competence_score": 66,
+      "success_score": 97,
+      "status_score": 216,
+      "idealisation_score": 678,
+      "distress_score": 2,
+      "social_comparison_score": 304,
+      "aosp_composite": 47,
+      "paradox_index": 23,
+      "word_count": 1,
+      "exclamation_density": 76,
+      "hashtag_count": 109,
+      "emoji_density": 1108
+    },
+    "aosp_ablation": {
+      "f1_macro_with_aosp": 0.9186340694407364,
+      "f1_macro_without_aosp": 0.9071086275078122,
+      "aosp_contribution_f1_macro": 0.011525441932924263
+    }
+  }
+}

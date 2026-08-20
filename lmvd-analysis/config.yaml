@@ -1,0 +1,19 @@
+project:
+  name: "Multimodal Well-Being Analysis"
+  seed: 42
+  output_dir: "outputs"
+
+paths:
+  structured_csv: "datasets/structured_data.csv"
+  unstructured_csv: "datasets/unstructured_data.csv"
+  image_dir: "datasets/images"
+  lmvd_data_dir: "data"
+  lmvd_video_dir: "data/Video_feature"
+  lmvd_audio_dir: "data/Audio_feature"
+  lmvd_labels: "data/lmvd_labels_summary.csv"
+
+targets:
+  text_multiclass: "status"
+  text_binary: "wellbeing_decline"
+  lmvd_binary: "label"
+  structured_distress: "high_distress"

@@ -1,0 +1,30 @@
+{
+  "paradox_definition_social_text": "wellbeing_decline=1 AND aosp_composite > 0 AND at least one presentation cue > 0 (competence/success/status/idealisation) AND distress_score == 0 (no explicit distress words \u2014 'happy/put-together' wording mismatch)",
+  "social_text": {
+    "aosp_quantile": 0.5,
+    "aosp_threshold": 5e-324,
+    "n_paradox_total": 968,
+    "n_paradox_test": 194,
+    "n_fusion_caught_text_missed": 15,
+    "best_fusion_model": "fusion_early_nn",
+    "definition": "wellbeing_decline=1 AND aosp_composite > 0 AND at least one presentation cue > 0 (competence/success/status/idealisation) AND distress_score == 0 (no explicit distress words \u2014 'happy/put-together' wording mismatch)"
+  },
+  "lmvd": {
+    "skipped": false,
+    "n_samples": 400,
+    "aosp_threshold": 0.0,
+    "n_paradox_test": 18,
+    "n_trimodal_caught_text_missed": 2,
+    "note": "LMVD captions are expression-derived (not user social posts). Trimodal here = RF on text+pooled video+audio features."
+  },
+  "verdict": {
+    "fusion_beats_text_on_paradox_recall": true,
+    "text_paradox_recall": 0.8505154639175257,
+    "fusion_paradox_recall": 0.8865979381443299,
+    "fusion_model": "fusion_early_nn",
+    "trimodal_beats_text_on_paradox_recall": false,
+    "lmvd_text_paradox_recall": 0.8333333333333334,
+    "lmvd_trimodal_paradox_recall": 0.8333333333333334,
+    "claim_guidance": "Use paradox-subset recall/F1 (not overall leaderboard) to argue that fusion/trimodal help when high-AOSP 'happy' presentation co-occurs with distress labels. Do not claim they beat transformers overall."
+  }
+}

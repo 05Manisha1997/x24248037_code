@@ -1,0 +1,214 @@
+{
+  "results": [
+    {
+      "modality": "text_dl",
+      "model": "text_mlp",
+      "test": {
+        "accuracy": 0.57,
+        "f1_macro": 0.562608076492727,
+        "f1_weighted": 0.576254704506154,
+        "roc_auc": 0.5988964346349746
+      }
+    },
+    {
+      "modality": "text_dl",
+      "model": "text_cnn",
+      "test": {
+        "accuracy": 0.56,
+        "f1_macro": 0.5592948717948718,
+        "f1_weighted": 0.5550641025641024,
+        "roc_auc": 0.6014431239388794
+      }
+    },
+    {
+      "modality": "text_dl",
+      "model": "text_bilstm",
+      "test": {
+        "accuracy": 0.61,
+        "f1_macro": 0.5741893219783819,
+        "f1_weighted": 0.6038257451686866,
+        "roc_auc": 0.5780984719864176
+      }
+    },
+    {
+      "modality": "text_dl",
+      "model": "text_gru",
+      "test": {
+        "accuracy": 0.57,
+        "f1_macro": 0.567882624861823,
+        "f1_weighted": 0.5606230529595015,
+        "roc_auc": 0.5814940577249577
+      }
+    },
+    {
+      "modality": "image_dl",
+      "model": "cnn",
+      "test": {
+        "accuracy": 0.57,
+        "f1_macro": 0.5017958521608157,
+        "f1_weighted": 0.5460363804889353,
+        "roc_auc": 0.4923599320882852
+      }
+    },
+    {
+      "modality": "image_dl",
+      "model": "resnet18",
+      "test": {
+        "accuracy": 0.56,
+        "f1_macro": 0.5416666666666666,
+        "f1_weighted": 0.5636666666666666,
+        "roc_auc": 0.5218590831918506
+      }
+    },
+    {
+      "modality": "image_dl",
+      "model": "resnet50",
+      "test": {
+        "accuracy": 0.6,
+        "f1_macro": 0.586606035551881,
+        "f1_weighted": 0.6044646548160396,
+        "roc_auc": 0.6466468590831919
+      }
+    },
+    {
+      "modality": "image_dl",
+      "model": "efficientnet_b0",
+      "test": {
+        "accuracy": 0.6,
+        "f1_macro": 0.5796553173602353,
+        "f1_weighted": 0.601849516603615,
+        "roc_auc": 0.6020797962648557
+      }
+    },
+    {
+      "modality": "image_dl",
+      "model": "vgg16",
+      "test": {
+        "accuracy": 0.58,
+        "f1_macro": 0.5716034271725826,
+        "f1_weighted": 0.5859975520195838,
+        "roc_auc": 0.5532682512733447
+      }
+    },
+    {
+      "modality": "image_dl",
+      "model": "mobilenet_v2",
+      "test": {
+        "accuracy": 0.59,
+        "f1_macro": 0.5829518868884143,
+        "f1_weighted": 0.5959637880174956,
+        "roc_auc": 0.5626061120543293
+      }
+    },
+    {
+      "modality": "video_dl",
+      "model": "video_audio_lstm",
+      "test": {
+        "accuracy": 0.72,
+        "f1_macro": 0.6996996996996997,
+        "f1_weighted": 0.7184384384384385,
+        "roc_auc": 0.7797113752122241
+      }
+    },
+    {
+      "modality": "video_dl",
+      "model": "visual_lstm",
+      "test": {
+        "accuracy": 0.59,
+        "f1_macro": 0.5249681381068243,
+        "f1_weighted": 0.5671509674429384,
+        "roc_auc": 0.6054753820033956
+      }
+    },
+    {
+      "modality": "video_dl",
+      "model": "audio_lstm",
+      "test": {
+        "accuracy": 0.78,
+        "f1_macro": 0.7640497640497641,
+        "f1_weighted": 0.7787730587730587,
+        "roc_auc": 0.799660441426146
+      }
+    },
+    {
+      "modality": "video_dl",
+      "model": "video_audio_gru",
+      "test": {
+        "accuracy": 0.74,
+        "f1_macro": 0.7312939231087227,
+        "f1_weighted": 0.7429020256304258,
+        "roc_auc": 0.7907470288624788
+      }
+    },
+    {
+      "modality": "video_dl",
+      "model": "audio_cnn1d",
+      "test": {
+        "accuracy": 0.75,
+        "f1_macro": 0.7303419264372775,
+        "f1_weighted": 0.747815769604142,
+        "roc_auc": 0.7444821731748728
+      }
+    },
+    {
+      "modality": "bimodal",
+      "model": "text+video",
+      "test": {
+        "accuracy": 0.58,
+        "f1_macro": 0.5091164095371669,
+        "f1_weighted": 0.5538849929873773,
+        "roc_auc": 0.6022920203735145
+      }
+    },
+    {
+      "modality": "bimodal",
+      "model": "image+video",
+      "test": {
+        "accuracy": 0.69,
+        "f1_macro": 0.6783898744683059,
+        "f1_weighted": 0.6930552961925511,
+        "roc_auc": 0.7173174872665535
+      }
+    },
+    {
+      "modality": "bimodal",
+      "model": "text+image",
+      "test": {
+        "accuracy": 0.58,
+        "f1_macro": 0.5091164095371669,
+        "f1_weighted": 0.5538849929873773,
+        "roc_auc": 0.49193548387096775
+      }
+    },
+    {
+      "modality": "trimodal",
+      "model": "text+image+video_early",
+      "test": {
+        "accuracy": 0.68,
+        "f1_macro": 0.6753246753246753,
+        "f1_weighted": 0.6846753246753247,
+        "roc_auc": 0.7198641765704584
+      }
+    },
+    {
+      "modality": "trimodal",
+      "model": "text+image+video_late",
+      "test": {
+        "accuracy": 0.76,
+        "f1_macro": 0.7142857142857143,
+        "f1_weighted": 0.7417142857142858,
+        "roc_auc": 0.669779286926995
+      }
+    },
+    {
+      "modality": "trimodal",
+      "model": "text+image+video_attention",
+      "test": {
+        "accuracy": 0.69,
+        "f1_macro": 0.6783898744683059,
+        "f1_weighted": 0.6930552961925511,
+        "roc_auc": 0.666383701188455
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-08-09 22:44:40",
+  "classical": {
+    "random_forest": {
+      "fresh_run_metrics": {
+        "accuracy": 0.9393910830426996,
+        "f1_macro": 0.9287128254509576,
+        "f1_weighted": 0.9392948590946006,
+        "roc_auc": 0.9806035828027799
+      },
+      "n_test": 10609,
+      "seconds": 151.5
+    },
+    "svm": {
+      "fresh_run_metrics": {
+        "accuracy": 0.9213875011782449,
+        "f1_macro": 0.9095567957872972,
+        "f1_weighted": 0.9221028318143407,
+        "roc_auc": 0.9689679117845968
+      },
+      "n_test": 10609,
+      "seconds": 89.0
+    },
+    "xgboost": {
+      "fresh_run_metrics": {
+        "accuracy": 0.9378829295880856,
+        "f1_macro": 0.9271629989383554,
+        "f1_weighted": 0.9378802956984911,
+        "roc_auc": 0.9816463550059108
+      },
+      "n_test": 10609,
+      "seconds": 60.2
+    }
+  },
+  "transformers": {
+    "bert-base-uncased": {
+      "reconstructed_eval_accuracy": 0.946,
+      "n_eval": 1000,
+      "seconds": 127.0,
+      "note": "Inference-only on saved checkpoint-500 weights; eval split reconstructed with the same recipe (sample=5000, 80/20 stratified split, seed=42) used by run_transformers() in scripts/run_full_training.py. Not guaranteed bit-identical to the original training run's logged trainer_state.json eval_accuracy \u2014 small (<1pp) drift is expected sample-composition noise, not retraining."
+    },
+    "roberta-base": {
+      "reconstructed_eval_accuracy": 0.954,
+      "n_eval": 1000,
+      "seconds": 112.6,
+      "note": "Inference-only on saved checkpoint-500 weights; eval split reconstructed with the same recipe (sample=5000, 80/20 stratified split, seed=42) used by run_transformers() in scripts/run_full_training.py. Not guaranteed bit-identical to the original training run's logged trainer_state.json eval_accuracy \u2014 small (<1pp) drift is expected sample-composition noise, not retraining."
+    },
+    "distilbert-base-uncased": {
+      "reconstructed_eval_accuracy": 0.938,
+      "n_eval": 1000,
+      "seconds": 67.0,
+      "note": "Inference-only on saved checkpoint-500 weights; eval split reconstructed with the same recipe (sample=5000, 80/20 stratified split, seed=42) used by run_transformers() in scripts/run_full_training.py. Not guaranteed bit-identical to the original training run's logged trainer_state.json eval_accuracy \u2014 small (<1pp) drift is expected sample-composition noise, not retraining."
+    }
+  }
+}

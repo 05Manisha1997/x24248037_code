@@ -1,0 +1,60 @@
+{
+  "results": [
+    {
+      "modality": "text",
+      "model": "rf_same_split",
+      "task": "classification",
+      "test": {
+        "accuracy": 0.6733333333333333,
+        "f1_macro": 0.6717247847787492,
+        "f1_weighted": 0.6803803079534162,
+        "roc_auc": 0.7648094677007938
+      }
+    },
+    {
+      "modality": "fusion",
+      "model": "early_rf_concat",
+      "task": "classification",
+      "test": {
+        "accuracy": 0.6766666666666666,
+        "f1_macro": 0.6744055944055944,
+        "f1_weighted": 0.684625641025641,
+        "roc_auc": 0.7704742914114798
+      }
+    },
+    {
+      "modality": "fusion",
+      "model": "early",
+      "task": "classification",
+      "test": {
+        "accuracy": 0.6883333333333334,
+        "f1_macro": 0.6848589027359977,
+        "f1_weighted": 0.697322733132789,
+        "roc_auc": 0.7789423935984254
+      }
+    },
+    {
+      "modality": "fusion",
+      "model": "late",
+      "task": "classification",
+      "test": {
+        "accuracy": 0.6833333333333333,
+        "f1_macro": 0.6809368142940307,
+        "f1_weighted": 0.6913524547340767,
+        "roc_auc": 0.77493493545338
+      }
+    },
+    {
+      "modality": "fusion",
+      "model": "attention",
+      "task": "classification",
+      "test": {
+        "accuracy": 0.685,
+        "f1_macro": 0.6814884097171314,
+        "f1_weighted": 0.6940855431128189,
+        "roc_auc": 0.7735883259312971
+      }
+    }
+  ],
+  "paradox": {}
+}

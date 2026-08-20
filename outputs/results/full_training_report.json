@@ -1,0 +1,98 @@
+{
+  "generated_at": "2026-07-16T08:03:39.598694",
+  "files": {
+    "model_comparison.csv": 20,
+    "trimodal_results.csv": 21,
+    "text_model_results.csv": 6,
+    "image_model_results.csv": 2,
+    "fusion_results.csv": 5,
+    "all_models_comparison.csv": 52
+  },
+  "model_counts": {
+    "model_comparison.csv": 20,
+    "trimodal_results.csv": 21,
+    "text_model_results.csv": 6,
+    "image_model_results.csv": 2,
+    "fusion_results.csv": 5,
+    "all_models_comparison.csv": 52
+  },
+  "top_15": [
+    {
+      "modality": "image_dl",
+      "model": "resnet18",
+      "accuracy": 1.0
+    },
+    {
+      "modality": "image",
+      "model": "mobilenet_v2",
+      "accuracy": 1.0
+    },
+    {
+      "modality": "image",
+      "model": "cnn",
+      "accuracy": 1.0
+    },
+    {
+      "modality": "image",
+      "model": "resnet18",
+      "accuracy": 1.0
+    },
+    {
+      "modality": "image",
+      "model": "resnet50",
+      "accuracy": 1.0
+    },
+    {
+      "modality": "image",
+      "model": "efficientnet_b0",
+      "accuracy": 1.0
+    },
+    {
+      "modality": "image",
+      "model": "vgg16",
+      "accuracy": 1.0
+    },
+    {
+      "modality": "image_dl",
+      "model": "cnn",
+      "accuracy": 1.0
+    },
+    {
+      "modality": "text_transformer",
+      "model": "roberta-base",
+      "accuracy": 0.959
+    },
+    {
+      "modality": "text_dl",
+      "model": "roberta-base",
+      "accuracy": 0.959
+    },
+    {
+      "modality": "text_transformer",
+      "model": "bert-base-uncased",
+      "accuracy": 0.946
+    },
+    {
+      "modality": "text_dl",
+      "model": "bert-base-uncased",
+      "accuracy": 0.946
+    },
+    {
+      "modality": "text_dl",
+      "model": "distilbert-base-uncased",
+      "accuracy": 0.943
+    },
+    {
+      "modality": "text_transformer",
+      "model": "distilbert-base-uncased",
+      "accuracy": 0.943
+    },
+    {
+      "modality": "text",
+      "model": "xgboost",
+      "accuracy": 0.9393910830426996
+    }
+  ],
+  "total_models": 52,
+  "mean_accuracy": 0.8734324509481126
+}

@@ -1,0 +1,46 @@
+{
+  "split": "80%/20% stratified (evaluation.test_size)",
+  "metrics": [
+    "accuracy",
+    "f1_macro",
+    "f1_weighted",
+    "roc_auc"
+  ],
+  "comparison_basis": "same-split text baseline from fusion_results.csv vs best fusion vs best trimodal",
+  "best_text": {
+    "tier": "text",
+    "modality": "text",
+    "model": "text_unimodal",
+    "accuracy": 0.7055,
+    "f1_macro": 0.7026735403428845,
+    "f1_weighted": 0.7135445390240979,
+    "roc_auc": 0.7900142545454547
+  },
+  "best_fusion": {
+    "tier": "fusion",
+    "modality": "fusion",
+    "model": "fusion_early",
+    "accuracy": 0.715,
+    "f1_macro": 0.7115732012034988,
+    "f1_weighted": 0.7233626466043057,
+    "roc_auc": 0.8023365818181817
+  },
+  "best_trimodal": {
+    "tier": "trimodal",
+    "modality": "trimodal",
+    "model": "text+image+video_late",
+    "accuracy": 0.76,
+    "f1_macro": 0.7142857142857143,
+    "f1_weighted": 0.7417142857142858,
+    "roc_auc": 0.669779286926995
+  },
+  "fusion_beats_text_f1_macro": true,
+  "trimodal_beats_text_f1_macro": true,
+  "notes": [
+    "Image synthetics are intentionally hard (shared palette + noise); prefer LMVD landmark images when available.",
+    "Fusion uses mild class-weighted CE + F1-based early stopping; text-only baseline uses the same stratified split.",
+    "Fair unimodal-vs-fusion comparison prefers fusion_results.csv same-split text baseline over cross-run transformers.",
+    "Trimodal captions are expression-derived only (no label leakage); subsets are stratified; checkpoints selected by f1_macro.",
+    "No raw LMVD wav/transcripts in-repo; AV alignment uses VGGish energy vs OpenFace AU intensity proxies."
+  ]
+}

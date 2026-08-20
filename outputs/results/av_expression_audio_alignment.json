@@ -1,0 +1,32 @@
+{
+  "n_samples": 150,
+  "pearson_au_vs_audio_energy": 0.11739232614338815,
+  "au_intensity_mean": 0.33734138624742627,
+  "audio_energy_mean": 0.2667897746960322,
+  "by_class": {
+    "normal": {
+      "n": 75,
+      "au_mean": 0.32873860382785397,
+      "audio_energy_mean": 0.2691100587447484,
+      "pearson_r": 0.2041061443820563
+    },
+    "depression": {
+      "n": 75,
+      "au_mean": 0.34594416866699856,
+      "audio_energy_mean": 0.26446949064731595,
+      "pearson_r": 0.0004027158479046698
+    }
+  },
+  "raw_media": {
+    "wav_count": 0,
+    "transcript_count": 0,
+    "sample_wav": null,
+    "note": "Whisper STT recommended as future work once raw audio is available; not required for this VGGish\u2194AU alignment demo."
+  },
+  "method": "Per-sample mean |AU| from TCN/OpenFace channels [0:17] vs RMS magnitude of VGGish frames as audio-energy proxy.",
+  "limitations": [
+    "No raw wav/transcripts in the current LMVD feature dump used here.",
+    "VGGish embeddings are not literal loudness; treat correlation as exploratory.",
+    "Expression captions in trimodal are lexicon-derived, not ASR transcripts."
+  ]
+}

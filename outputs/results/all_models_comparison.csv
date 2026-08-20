@@ -1,0 +1,41 @@
+modality,model,accuracy,f1_weighted,f1_macro,roc_auc,source,tier,label
+text_dl,roberta-base,0.959,0.959087568401056,0.9525374520020512,,text_model_results.csv,unimodal DL,text_dl / roberta-base
+text_transformer,roberta-base,0.959,0.959087568401056,0.9525374520020512,,transformer_results.csv,unimodal DL,text_transformer / roberta-base
+text_dl,bert-base-uncased,0.946,0.945806780661206,0.9367737765725768,,text_model_results.csv,unimodal DL,text_dl / bert-base-uncased
+text_transformer,bert-base-uncased,0.946,0.945806780661206,0.9367737765725768,,transformer_results.csv,unimodal DL,text_transformer / bert-base-uncased
+text_dl,distilbert-base-uncased,0.943,0.9430735668091826,0.9339022379310704,,text_model_results.csv,unimodal DL,text_dl / distilbert-base-uncased
+text_transformer,distilbert-base-uncased,0.943,0.9430735668091826,0.9339022379310704,,transformer_results.csv,unimodal DL,text_transformer / distilbert-base-uncased
+text_dl,xgboost,0.9393910830426996,0.9393730577581276,0.9288952173405692,,text_model_results.csv,unimodal DL,text_dl / xgboost
+text_dl,random_forest,0.9386370063153926,0.938576726015863,0.9279123547642952,,text_model_results.csv,unimodal DL,text_dl / random_forest
+text_dl,svm,0.9218587991328118,0.9225839346441674,0.9101342452108075,,text_model_results.csv,unimodal DL,text_dl / svm
+image_dl,resnet50,0.8833333333333333,0.8830409356725146,0.8830409356725146,0.9411111111111112,image_model_results.csv,unimodal DL,image_dl / resnet50
+image_dl,resnet18,0.85,0.847930160518164,0.847930160518164,0.9411111111111112,image_model_results.csv,unimodal DL,image_dl / resnet18
+image_dl,mobilenet_v2,0.8333333333333334,0.8325892857142857,0.8325892857142857,0.93,image_model_results.csv,unimodal DL,image_dl / mobilenet_v2
+image_dl,efficientnet_b0,0.8,0.799777530589544,0.7997775305895439,0.9488888888888888,image_model_results.csv,unimodal DL,image_dl / efficientnet_b0
+image_dl,cnn,0.8,0.8,0.8,0.92,image_model_results.csv,unimodal DL,image_dl / cnn
+video_dl,audio_lstm,0.78,0.7787730587730587,0.7640497640497641,0.799660441426146,trimodal_results.csv,unimodal DL (LMVD),video_dl / audio_lstm
+trimodal,text+image+video_late,0.76,0.7417142857142858,0.7142857142857143,0.669779286926995,trimodal_results.csv,trimodal fusion,trimodal / text+image+video_late
+video_dl,audio_cnn1d,0.75,0.747815769604142,0.7303419264372775,0.7444821731748728,trimodal_results.csv,unimodal DL (LMVD),video_dl / audio_cnn1d
+video_dl,video_audio_gru,0.74,0.7429020256304258,0.7312939231087227,0.7907470288624788,trimodal_results.csv,unimodal DL (LMVD),video_dl / video_audio_gru
+video_dl,video_audio_lstm,0.72,0.7184384384384385,0.6996996996996997,0.7797113752122241,trimodal_results.csv,unimodal DL (LMVD),video_dl / video_audio_lstm
+fusion_proxy,fusion_early,0.715,0.7233626466043057,0.7115732012034988,0.8023365818181817,fusion_results.csv,proxy fusion (text + emoji/hashtag),fusion_proxy / fusion_early
+fusion_proxy,fusion_early_rf_concat,0.7125,0.7212335293397749,0.7086128222013719,0.7971339636363637,fusion_results.csv,proxy fusion (text + emoji/hashtag),fusion_proxy / fusion_early_rf_concat
+fusion_proxy,fusion_late,0.712,0.7204980261160037,0.7084725174612815,0.8014522181818179,fusion_results.csv,proxy fusion (text + emoji/hashtag),fusion_proxy / fusion_late
+fusion_proxy,fusion_attention,0.7085,0.7171250574831335,0.7048967151157419,0.8050687999999999,fusion_results.csv,proxy fusion (text + emoji/hashtag),fusion_proxy / fusion_attention
+fusion_proxy,text_unimodal,0.7055,0.7135445390240979,0.7026735403428845,0.7900142545454547,fusion_results.csv,proxy unimodal,fusion_proxy / text_unimodal
+trimodal,text+image+video_attention,0.69,0.6930552961925511,0.6783898744683059,0.666383701188455,trimodal_results.csv,trimodal fusion,trimodal / text+image+video_attention
+bimodal,image+video,0.69,0.6930552961925511,0.6783898744683059,0.7173174872665535,trimodal_results.csv,bimodal fusion,bimodal / image+video
+fusion,early,0.6883333333333334,0.697322733132789,0.6848589027359977,0.7789423935984254,model_comparison.csv,unimodal / classical,fusion / early
+fusion,attention,0.685,0.6940855431128189,0.6814884097171314,0.7735883259312971,model_comparison.csv,unimodal / classical,fusion / attention
+fusion,late,0.6833333333333333,0.6913524547340767,0.6809368142940307,0.77493493545338,model_comparison.csv,unimodal / classical,fusion / late
+trimodal,text+image+video_early,0.68,0.6846753246753247,0.6753246753246753,0.7198641765704584,trimodal_results.csv,trimodal fusion,trimodal / text+image+video_early
+fusion,early_rf_concat,0.6766666666666666,0.684625641025641,0.6744055944055944,0.7704742914114798,model_comparison.csv,unimodal / classical,fusion / early_rf_concat
+text,rf_same_split,0.6733333333333333,0.6803803079534162,0.6717247847787492,0.7648094677007938,model_comparison.csv,unimodal / classical,text / rf_same_split
+text_dl,text_bilstm,0.61,0.6038257451686866,0.5741893219783819,0.5780984719864176,trimodal_results.csv,unimodal DL (LMVD),text_dl / text_bilstm
+video_dl,visual_lstm,0.59,0.5671509674429384,0.5249681381068243,0.6054753820033956,trimodal_results.csv,unimodal DL (LMVD),video_dl / visual_lstm
+bimodal,text+image,0.58,0.5538849929873773,0.5091164095371669,0.4919354838709677,trimodal_results.csv,bimodal fusion,bimodal / text+image
+bimodal,text+video,0.58,0.5538849929873773,0.5091164095371669,0.6022920203735145,trimodal_results.csv,bimodal fusion,bimodal / text+video
+text_dl,text_gru,0.57,0.5606230529595015,0.567882624861823,0.5814940577249577,trimodal_results.csv,unimodal DL (LMVD),text_dl / text_gru
+text_dl,text_mlp,0.57,0.576254704506154,0.562608076492727,0.5988964346349746,trimodal_results.csv,unimodal DL (LMVD),text_dl / text_mlp
+text_dl,text_cnn,0.56,0.5550641025641024,0.5592948717948718,0.6014431239388794,trimodal_results.csv,unimodal DL (LMVD),text_dl / text_cnn
+image_dl,vgg16,0.5,0.3333333333333333,0.3333333333333333,0.5944444444444444,image_model_results.csv,unimodal DL,image_dl / vgg16

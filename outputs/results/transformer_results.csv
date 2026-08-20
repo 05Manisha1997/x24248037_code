@@ -1,0 +1,4 @@
+modality,model,accuracy,f1_macro,f1_weighted
+text_transformer,bert-base-uncased,0.946,0.9367737765725768,0.945806780661206
+text_transformer,roberta-base,0.959,0.9525374520020513,0.9590875684010561
+text_transformer,distilbert-base-uncased,0.943,0.9339022379310704,0.9430735668091826
